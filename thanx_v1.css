@@ -1,0 +1,185 @@
+@charset "UTF-8";
+*{margin: 0; padding: 0; box-sizing: border-box;  -webkit-box-sizing: border-box;}
+
+:root {--theme-red : #cb2018; --theme-blue: #0084C5; --pera: #333; --head-pera: #1a1a1a; --white: #fff; --black: #000;}
+html {font-size: 62.5%; scroll-behavior: smooth;}
+body { font-family: 'Gilroy'; font-weight: 400; overflow-x: hidden !important; line-height: 1; letter-spacing: 0.02rem; 
+  background: url(../img/thanx-page-bg.png) no-repeat; background-size: cover; background-position: center center;
+}
+
+a, abbr, acronym, address, applet, b, big, blockquote, body, caption, center, cite, code, dd, del, dfn, div, dl, dt, em, fieldset, font, form, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, li, object, ol, p, pre, q, s, samp, small, span, strike, strong, sub, sup, table, tbody, td, tfoot, th, thead, tr, tt, u, ul, var {
+    margin: 0;
+    padding: 0;
+  }
+img {max-width: 100%;
+    max-height: 100%;}
+
+:focus{outline: 0 !important;}
+.cf:after, .cf:before {content: ""; display: table;}
+.cf:after{clear:both;}
+.posR{position: relative;}
+
+@font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Bold.woff2") format("woff2"), url("../fonts/Gilroy-Bold.woff") format("woff"), url("../fonts/Gilroy-Bold.svg#Gilroy-Bold") format("svg");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Light.svg#Gilroy-Light") format("svg");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Heavy.woff2") format("woff2"), url("../fonts/Gilroy-Heavy.woff") format("woff"), url("../fonts/Gilroy-Heavy.svg#Gilroy-SemiBold") format("svg");
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Regular.woff2") format("woff2"), url("../fonts/Gilroy-Regular.woff") format("woff"), url("../fonts/Gilroy-Regular.svg#Gilroy-Regular") format("svg");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Gilroy';
+    src: url("../fonts/Gilroy-Medium.woff2") format("woff2"), url("../fonts/Gilroy-Medium.woff") format("woff"), url("../fonts/Gilroy-Medium.svg#Gilroy-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+
+i {line-height: 0; }
+
+strong {font-weight: 600;}
+
+button, a {outline: 0 !important; font-family: 'Gilroy'; text-decoration: none; cursor: pointer;}
+
+p, li {
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: var(--pera);
+    line-height: 2.8rem;
+}
+
+.second-heading {
+    font-size: 3rem;
+    color: #141414;
+    font-weight: 600;
+    line-height: 3.8rem;
+    padding: 1.5rem 0 .5rem;
+}
+
+.head-pera {
+    color: var(--head-pera);
+    font-weight: 400;
+    text-align: center;
+    font-size: 1.6rem;
+}
+  
+  
+.main-container {width: 120rem; padding: 0 1.5rem; margin: auto;}
+  
+
+  .sticky {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1;
+    transition: 0.3s ease-in;
+    animation: upsdown 1000ms;
+  }
+
+  .mainheader {padding: 2rem;} 
+
+  .mainheader .logo {margin: auto; display: table;}
+
+  .mainheader .logo img {width: 40rem;}
+
+.thanks-detail {
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .thanks-detail .thanks {
+    width: 8rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .thanks-detail h1 {
+    font-size: 4rem;
+    color: var(--theme-blue);
+    font-weight: 600;
+    margin-bottom: 2rem;
+  }
+  
+  .thanks-detail p.first {
+    font-size: 1.6rem;
+    color: #000000;
+    font-weight: 400;
+    margin-bottom: 2rem;
+  }
+  
+  .thanks-detail p.second {
+    font-size: 1.8rem;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 3rem;
+  }
+  
+  .thanks-detail .link-first {
+    font-size: 1.6rem;
+    font-weight: 600;
+    transition: 0.2s;
+    color: var(--theme-blue);
+    display: inline-block;
+    text-decoration: none;
+    border: 0.1rem solid var(--theme-blue);
+    padding: 1.2rem 2.5rem;
+    border-radius: 1rem;
+  }
+
+  
+
+  @media only screen and (max-width: 767px) {
+
+    .main-container { width: 94% !important;}
+
+    html {font-size: 59% !important;}
+
+    body {
+       
+        background-position: 5% -120% !important;
+        background-size: 295%;
+        
+    }
+
+
+    .mainheader {text-align: center;}
+
+    .thanks-detail {
+        position: static;
+        padding: 3rem 3% 0px 3%;
+        transform: initial;
+        width: 94%;
+        margin: auto;
+    }
+
+  }
